@@ -3,17 +3,19 @@ package uzdaviniai;
 import java.util.Scanner;
 
 public class LyginisNelyginis {
-    public LyginisNelyginis(){
+    private  int _a;
 
-        Scanner in = new Scanner(System.in);
-        int a;
+    public int getA() {
+        return _a;
+    }
+    public void setA(int value){
+        _a = value;
+    }
+    public void skaiciuok(){
 
-        System.out.print("Iveskite skaiciu: ");
-        a = in.nextInt();
-
-        if (a % 2 == 0){
+        if (_a % 2 == 0){
             System.out.print("Skaicius lyginis");
-        }else {
+        } else {
             System.out.print("Skaicius nelyginis");
         }
     }
